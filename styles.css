@@ -113,4 +113,13 @@ header a:hover {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  grid-area: content;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto;
+  grid-template-areas: "Maunga-club-context";
+  text-align: center;
+  background-color:#7B9669;
+  color: black;
+  border-radius: 20px;
 }
