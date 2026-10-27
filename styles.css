@@ -20,7 +20,7 @@ a {
   background-color: rgb(46, 139, 87);
   color: #E6E6E6;
   border: 1px solid #E6E6E6;
-  text-shadow: #E6E6E6 0 1px 0;
+  text-shadow: #a8a6a6 0 1px 0;
   width: 250px;
   display: block;
   border-radius: 5px;
@@ -42,13 +42,6 @@ article {
 body{
   Background-color:#E6E6E6;
   margin-bottom: 100px;
-}
-
-/*TODO: Fix later*/
-.Maunga-Links{
-  display: flex;
-  align-items: center;
-  
 }
 
 
@@ -112,10 +105,36 @@ header a:hover {
   background-color: #6C8480;
 }
 
+/*Chalet inbox info*/
+.Maunga-Links p{
+  text-align: center;
+  font-size: 8px;
+  text-shadow: none;
+
+}
+/*Chalet context hover (Pasted and adapted) */
+.Maunga-Links .chalet-button {
+  transition: transform 0.2s ease;
+}
+
+.Maunga-Links .chalet-button:hover {
+  transform: scale(1.5);
+}
+
+.Maunga-Links{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
+  
+}
 
 /*======================================================================================================================================================================*/
 /*Context*/
 /*======================================================================================================================================================================*/
+/*Maunga club homepage context*/
 .Maunga-Club-Context{
   padding: 0 20px;
   max-width: 600px;
@@ -130,6 +149,19 @@ header a:hover {
   background-color:#7B9669;
   color: black;
   border-radius: 20px;
+}
+
+/*Chalet homepage context*/
+.chalet-button{
+  padding:auto;
+  display: inline-block;
+  width: 400px;
+  height: 150px;
+}
+
+.chalet-description{
+  font-size: 10px;
+  font-weight: normal;
 }
 
 /*======================================================================================================================================================================*/
@@ -157,3 +189,4 @@ header a:hover {
   margin-top:0px;
   margin-bottom:20px;
 }
+
