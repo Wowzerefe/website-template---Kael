@@ -5,7 +5,7 @@
 /*Headings*/
 /*======================================================================================================================================================================*/
 h2 {
-  color: rgb(50, 205, 50);
+  color: rgb(82, 133, 82);
   text-align: center;
 }
 
@@ -100,6 +100,36 @@ header a{
   text-shadow: none;
   margin: 0;
 }
+/*======================================================================================================================================================================*/
+/*Chalet information*/
+/*======================================================================================================================================================================*/
+.Chalet-h2{
+  border-bottom:2px solid rgb(133, 168, 133);
+  width: 20%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.Chalet-context{
+  width:50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Chalet-bottom-context{
+  padding:20px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*Adapted from "gridbyexample.com"*/
+  gap: 20px;
+  text-align: center;
+  background-color:#7B9669;
+  color: black;
+  border-radius: 20px;
+}
+
+/*======================================================================================================================================================================*/
+/*Extra details incoorperated through trials*/
+/*======================================================================================================================================================================*/
 
 header a:hover {
   background-color: #6C8480;
@@ -118,7 +148,7 @@ header a:hover {
 }
 
 .Maunga-Links .chalet-button:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .Maunga-Links{
@@ -129,6 +159,12 @@ header a:hover {
   align-items: stretch;
   padding: 20px;
   
+}
+
+.Chalet-header{
+  border-bottom:2px solid rgb(133, 168, 133);
+  width: 40%;
+  margin: 0 auto; /*Centers the text and line making it horizontal*/
 }
 
 /*======================================================================================================================================================================*/
@@ -156,12 +192,22 @@ header a:hover {
   padding:auto;
   display: inline-block;
   width: 400px;
-  height: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
 }
 
-.chalet-description{
-  font-size: 10px;
+p.chalet-description{
+  font-size: 15px;
   font-weight: normal;
+  width: auto;
+  text-align: center;
+  margin-top: 8px;
+  line-height: 1.4; /*Measures height of text, found online and adapted*/
 }
 
 /*======================================================================================================================================================================*/
@@ -190,3 +236,54 @@ header a:hover {
   margin-bottom:20px;
 }
 
+/*======================================================================================================================================================================*/
+/*Chalet grids (Pasted and adapted from "gridbyexample.com" )*/
+/*======================================================================================================================================================================*/
+.Kakapo-photos img {
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.Kakapo-photos {
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col3-start] 1fr [col3-end];
+    grid-template-rows: [row1-start] 220px [row2-start] 220px [row2-end];
+    background-color: #fff;
+    color: #444;
+    margin: 0 auto;
+    padding: 20px;
+    background:#E6E6E6
+  }
+
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    
+
+  }
+
+  .a {
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start ;
+  }
+  .b {
+    grid-column: col3-start ;
+    grid-row: row1-start / row2-end;
+  }
+  .c {
+    grid-column: col1-start;
+    grid-row: row2-start ;
+  }
+  .d {
+    grid-column: col2-start ;
+    grid-row: row2-start ;
+  }
